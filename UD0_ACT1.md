@@ -9,9 +9,14 @@ Mi conclusión es que al principio cuando lo abro no queda igual, el .txt muestr
 <unidad>Introducción</unidad>
 <unidad>HTML</unidad>
 <unidad>CSS</unidad>
-…
 </contenido>
 </modulo>
-…
+<modulo><titulo>Base de datos</titulo>
+<contenido>
+<unidad>Introducción</unidad>
+<unidad>HTML</unidad>
+<unidad>CSS</unidad>
+</contenido>
+</modulo>
 </dam>
 ```
