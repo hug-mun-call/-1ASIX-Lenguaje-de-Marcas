@@ -14,8 +14,15 @@ Mi conclusión es que al principio cuando lo abro no queda igual, el .txt muestr
 <modulo><titulo>Base de datos</titulo>
 <contenido>
 <unidad>Introducción</unidad>
-<unidad>HTML</unidad>
-<unidad>CSS</unidad>
+<unidad>Edición de datos</unidad>
+<unidad>Realización de consultas</unidad>
+</contenido>
+</modulo>
+<modulo><titulo>Lectura y escritura de información</titulo>
+<contenido>
+<unidad>Introducción</unidad>
+<unidad>Flujos de entrada y salida</unidad>
+<unidad>Manejo de archivos de texto y binarios</unidad>
 </contenido>
 </modulo>
 </dam>
