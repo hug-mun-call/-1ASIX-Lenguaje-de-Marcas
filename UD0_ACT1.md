@@ -29,59 +29,41 @@ Mi conclusión es que al principio cuando lo abro no queda igual, el .txt muestr
 ```
 # Actividad 3
 ```
-<paises_mundo>
+<!DOCTYPE paises [
+  <!ELEMENT paises - - (pais+)>
+  <!ELEMENT pais - - (nombre, capital, continente, poblacion, moneda)>
+  <!ELEMENT nombre - - (#PCDATA)>
+  <!ELEMENT capital - - (#PCDATA)>
+  <!ELEMENT continente - - (#PCDATA)>
+  <!ELEMENT poblacion - - (#PCDATA)>
+  <!ELEMENT moneda - - (#PCDATA)>
+]>
 
-  <pais codigo_iso="ESP" status="independiente">
-    <nombre>España</nombre>
+<paises>
+
+  <pais>
+    <nombre>Espana</nombre>
     <capital>Madrid</capital>
     <continente>Europa</continente>
-    <poblacion>47420000</poblacion>
-    <superficie unidad="km2">505990</superficie>
-    <idiomas>
-      <idioma tipo="oficial">Español</idioma>
-      <idioma tipo="cooficial">Catalán</idioma>
-      <idioma tipo="cooficial">Euskera</idioma>
-      <idioma tipo="cooficial">Gallego</idioma>
-    </idiomas>
-    <moneda codigo="EUR">Euro</moneda>
+    <poblacion>47000000</poblacion>
+    <moneda>Euro</moneda>
   </pais>
 
-  <pais codigo_iso="JPN" status="independiente">
-    <nombre>Japón</nombre>
+  <pais>
+    <nombre>Japon</nombre>
     <capital>Tokio</capital>
     <continente>Asia</continente>
-    <poblacion>125100000</poblacion>
-    <superficie unidad="km2">377975</superficie>
-    <idiomas>
-      <idioma tipo="oficial">Japonés</idioma>
-    </idiomas>
-    <moneda codigo="JPY">Yen</moneda>
+    <poblacion>125000000</poblacion>
+    <moneda>Yen</moneda>
   </pais>
 
-  <pais codigo_iso="BRA" status="independiente">
+  <pais>
     <nombre>Brasil</nombre>
     <capital>Brasilia</capital>
-    <continente>América del Sur</continente>
-    <poblacion>214300000</poblacion>
-    <superficie unidad="km2">8515767</superficie>
-    <idiomas>
-      <idioma tipo="oficial">Portugués</idioma>
-    </idiomas>
-    <moneda codigo="BRL">Real brasileño</moneda>
+    <continente>America del Sur</continente>
+    <poblacion>214000000</poblacion>
+    <moneda>Real</moneda>
   </pais>
 
-  <pais codigo_iso="GRL" status="dependiente">
-    <nombre>Groenlandia</nombre>
-    <capital>Nuuk</capital>
-    <continente>América del Norte</continente>
-    <poblacion>56600</poblacion>
-    <superficie unidad="km2">2166086</superficie>
-    <idiomas>
-      <idioma tipo="oficial">Groenlandés</idioma>
-      <idioma tipo="secundario">Danés</idioma>
-    </idiomas>
-    <moneda codigo="DKK">Corona danesa</moneda>
-  </pais>
-
-</paises_mundo>
+</paises>
 ```
