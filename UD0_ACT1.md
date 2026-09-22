@@ -82,8 +82,6 @@ Mi conclusión es que al principio cuando lo abro no queda igual, el .txt muestr
         <p><strong>Páginas:</strong> 296 págs</p>
     </article>
 
-    <hr>
-
     <!-- Libro 2 -->
     <article>
         <h2>TODO ALATRISTE</h2>
@@ -93,8 +91,6 @@ Mi conclusión es que al principio cuando lo abro no queda igual, el .txt muestr
         <p><strong>Editorial:</strong> ALFAGUARA</p>
         <p><strong>Idioma:</strong> CASTELLÀ</p>
     </article>
-
-    <hr>
 
     <!-- Libro 3 -->
     <article>
