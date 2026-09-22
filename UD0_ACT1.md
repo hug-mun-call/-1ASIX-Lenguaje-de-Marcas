@@ -29,8 +29,15 @@ Mi conclusión es que al principio cuando lo abro no queda igual, el .txt muestr
 ```
 # Actividad 3
 ```
-<!DOCTYPE html >
-
+<!DOCTYPE paises [
+  <!ELEMENT paises    - - (pais+)>
+  <!ELEMENT pais      - - (nombre, capital)>
+  <!ELEMENT nombre    - - (#PCDATA)>
+  <!ELEMENT capital   - - (#PCDATA)>
+  <!ELEMENT continente   - - (#PCDATA)>
+  <!ELEMENT poblacion   - - (#PCDATA)>
+  <!ELEMENT moneda   - - (#PCDATA)>
+]>
 <paises>
 
   <pais>
