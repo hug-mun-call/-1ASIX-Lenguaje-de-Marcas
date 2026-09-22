@@ -67,3 +67,54 @@ Mi conclusión es que al principio cuando lo abro no queda igual, el .txt muestr
 
 </paises>
 ```
+# Actividad 4
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Libros</title>
+</head>
+<body>
+
+    <h1>Catálogo de Libros</h1>
+
+    <!-- Libro 1 -->
+    <article>
+        <h2>FALCO</h2>
+        <p><strong>Formato:</strong> En papel</p>
+        <p><strong>ISBN:</strong> 9788420419688</p>
+        <p><strong>Autor:</strong> ARTURO PEREZ REVERTE</p>
+        <p><strong>Editorial:</strong> ALFAGUARA</p>
+        <p><strong>Idioma:</strong> CASTELLÀ</p>
+        <p><strong>Páginas:</strong> 296 págs</p>
+    </article>
+
+    <hr>
+
+    <!-- Libro 2 -->
+    <article>
+        <h2>TODO ALATRISTE</h2>
+        <p><strong>Formato:</strong> EBOOK</p>
+        <p><strong>ISBN:</strong> 9788420425528</p>
+        <p><strong>Autor:</strong> ARTURO PEREZ REVERTE</p>
+        <p><strong>Editorial:</strong> ALFAGUARA</p>
+        <p><strong>Idioma:</strong> CASTELLÀ</p>
+    </article>
+
+    <hr>
+
+    <!-- Libro 3 -->
+    <article>
+        <h2>HOMBRES BUENOS</h2>
+        <p><strong>Formato:</strong> En papel</p>
+        <p><strong>ISBN:</strong> 9788466329804</p>
+        <p><strong>Autor:</strong> ARTURO PEREZ REVERTE</p>
+        <p><strong>Editorial:</strong> PUNTO DE LECTURA (<time>2024</time>)</p>
+        <p><strong>Idioma:</strong> CASTELLÀ</p>
+        <p><strong>Sinopsis:</strong> La heróica aventura de quienes se atrevieron a cambiar el mundo con libros. En tiempos de oscuridad siempre hubo hombres buenos que lucharon para llevar las luces y el progreso. Y otros que procuraron impedirlo.</p>
+    </article>
+
+</body>
+</html>
+```
