@@ -1,0 +1,7 @@
+Línea 1: El tipo de documento es incorrecto, pone <!DOCTYPE htm> en lugar de <!DOCTYPE html>.
+Línea 2: El atributo del idioma está mal escrito, pone lan=es en vez de lang="es".
+Línea 5: La etiqueta <title> no está cerrada correctamente al final de la línea.
+Línea 7: La etiqueta de cierre del encabezado está mal escrita, repite <h1> en vez de usar </h1>.
+Línea 8: Las etiquetas <b> y <p> están mal anidadas (se cruzan), ya que pone <p><b>... </p></b> en lugar de cerrarse en orden inverso (<b>...</b></p>).
+Línea 9: Falta la etiqueta de cierre del párrafo </p> al final de la línea.
+Líneas 11 y 12: Los elementos de lista <li> no están cerrados con sus respectivas etiquetas de cierre </li>.
