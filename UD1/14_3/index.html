@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Guía de Redes e Infraestructura para ASIX</title>
+</head>
+<body>
+
+    <h1 id="inicio">Guía Básica de Redes y Administración de Sistemas</h1>
+
+    <h2>Índice de Contenidos</h2>
+    <ul>
+        <li><a href="#sistemas-operativos">1. Sistemas Operativos en Red</a></li>
+        <li><a href="#modelo-osi">2. El Modelo OSI y Protocolos TCP/IP</a></li>
+        <li><a href="#direccionamiento-ip">3. Direccionamiento IP y Subnetting</a></li>
+        <li><a href="#virtualizacion">4. Virtualización y Servicios en la Nube</a></li>
+    </ul>
+
+    <hr>
+
+    <h2 id="sistemas-operativos">1. Sistemas Operativos en Red</h2>
+    <p>
+        Un sistema operativo en red es el software encargado de gestionar los recursos de hardware, los servicios
+        y la seguridad dentro de un entorno cliente-servidor. Entre las soluciones más utilizadas destacan las
+        distribuciones de GNU/Linux orientadas a servidores (como Ubuntu Server o Debian) y Microsoft Windows Server.
+    </p>
+    <p>
+        El perfil técnico en ASIX debe ser capaz de configurar servicios esenciales en estos entornos, tales como
+        servidores web, servidores de nombres de dominio (DNS) y asignación dinámica de direcciones mediante DHCP.
+        La automatización mediante scripts de consola es fundamental para garantizar un mantenimiento eficiente.
+    </p>
+    <p>
+        <a href="#inicio">↑ Volver al índice</a>
+    </p>
+
+    <h2 id="modelo-osi">2. El Modelo OSI y Protocolos TCP/IP</h2>
+    <p>
+        El modelo de interconexión de sistemas abiertos (OSI) es una representación conceptual estructurada en 7 capas
+        que describe cómo viaja la información desde una aplicación hasta los medios físicos de transmisión.
+        Comprender cada nivel permite diagnosticar problemas de conectividad de forma sistemática y rápida.
+    </p>
+    <p>
+        En la práctica, la arquitectura TCP/IP es el estándar real empleado en Internet y redes locales.
+        Protocolos como IP en la capa de red o TCP y UDP en la capa de transporte garantizan el enrutamiento y la
+        entrega de los paquetes de datos entre equipos interconectados.
+    </p>
+    <p>
+        <a href="#inicio">↑ Volver al índice</a>
+    </p>
+
+    <h2 id="direccionamiento-ip">3. Direccionamiento IP y Subnetting</h2>
+    <p>
+        Cada dispositivo conectado a una red requiere una dirección IP única para poder comunicarse. En las redes
+        IPv4, estas direcciones constan de 32 bits divididos en cuatro octetos expresados en formato decimal,
+        acompañados de una máscara de subred que identifica el segmento de red y el host.
+    </p>
+    <p>
+        El subnetting o división en subredes permite a los administradores segmentar una red física en múltiples
+        redes lógicas independientes. Esto no solo mejora el rendimiento al reducir el tráfico de difusión (broadcast),
+        sino que también incrementa la seguridad y el control de acceso en la infraestructura.
+    </p>
+    <p>
+        <a href="#inicio">↑ Volver al índice</a>
+    </p>
+
+    <h2 id="virtualizacion">4. Virtualización y Servicios en la Nube</h2>
+    <p>
+        La virtualización es una tecnología que permite crear entornos de ejecución abstractos sobre un mismo hardware
+        físico mediante el uso de hipervisores. Herramientas como Proxmox, VMware ESXi o VirtualBox permiten desplegar
+        múltiples sistemas operativos de forma aislada e independiente.
+    </p>
+    <p>
+        Esta flexibilidad es la base sobre la que se construyen los servicios modernos de Cloud Computing.
+        Permite optimizar el uso de los recursos de procesador y memoria, facilitar las copias de seguridad de las máquinas
+        virtuales y reducir drásticamente los costes de mantenimiento e infraestructura física.
+    </p>
+    <p>
+        <a href="#inicio">↑ Volver al índice</a>
+    </p>
+
+</body>
+</html>
