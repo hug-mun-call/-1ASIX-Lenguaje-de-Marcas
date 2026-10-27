@@ -1,0 +1,17 @@
+div.articulo h1 em {
+    color: orange;
+}
+li p {
+    background-color: #f2f2f2;
+}
+div.comentarios p {
+    border-left: 4px solid #333333;
+    padding-left: 8px;
+}
+p.especial {
+    font-weight: bold;
+    color: #2e86c1;
+}
+span.especial, .especial {
+    background-color: #f9e79f;
+}

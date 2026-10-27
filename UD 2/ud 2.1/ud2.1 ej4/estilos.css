@@ -1,0 +1,19 @@
+
+#corp {
+    color: #1f618d;
+    text-align: center;
+}
+
+.corp {
+    color: #2e4053;
+}
+
+a[target="_blank"] {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+p[class] {
+    background-color: #f9e79f;
+    padding: 5px;
+}
