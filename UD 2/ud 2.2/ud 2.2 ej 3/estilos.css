@@ -5,7 +5,6 @@ body {
     padding: 40px;
 }
 
-/* 1. Limpieza de lista y disposición horizontal con Flexbox */
 nav ul {
     list-style: none;
     margin: 0;
@@ -13,12 +12,10 @@ nav ul {
     display: flex;
 }
 
-/* Separación entre elementos */
 nav li {
     margin-right: 12px;
 }
 
-/* 2. Estilo de los elementos del menú (enlaces convertidos en cajas) */
 nav li a {
     display: inline-block;
     text-decoration: none;
