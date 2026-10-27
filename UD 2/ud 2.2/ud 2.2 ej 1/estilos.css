@@ -1,4 +1,4 @@
-/* Estilos generales de la página */
+
 body {
     font-family: Arial, sans-serif;
     color: #333333;
@@ -17,18 +17,13 @@ h2 {
     border-bottom: 2px solid #ecf0f1;
     padding-bottom: 5px;
 }
-
-/* Requisito: Ingredientes con lista desordenada de tipo cuadrado (square) */
 ul {
     list-style-type: square;
 }
-
-/* Requisito: Elaboración con lista ordenada de números romanos en mayúscula (upper-roman) */
 ol {
     list-style-type: upper-roman;
 }
 
-/* Requisito: Sublista desordenada anidada con tipo círculo (circle) */
 ul.sublista-utensilios {
     list-style-type: circle;
     margin-top: 5px;
