@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.pagina {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2px solid #333333;
+    padding: 20px;
+}
+
+.cabecera {
+    background-color: #e3f2fd;
+    border: 1px solid #90caf9;
+    padding: 15px;
+    text-align: center;
+}
+
+.contenido {
+    background-color: #f1f8e9;
+    border: 1px solid #c5e1a5;
+    padding: 15px;
+    margin-top: 15px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #b0bec5;
+    padding: 15px;
+    border-radius: 8px;
+    width: 215px; 
+}
+
+.etiqueta {
+    display: inline-block;
+    background-color: #ff7043;
+    color: #ffffff;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.pie {
+    background-color: #ffebee;
+    border: 1px solid #ffcdd2;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
