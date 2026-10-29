@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 30px;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+fieldset {
+    background-color: #E1785A; 
+    border: 2px solid #ffffff;
+    padding: 20px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    padding: 0 5px;
+}
+
+.campo {
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ffffff;
+}
+
+label {
+    display: inline-block;
+    width: 190px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    border: 1px solid #777777;
+    background-color: #ffffff;
+    padding: 4px;
+}
+
+input:focus, select:focus, textarea:focus {
+    background-color: #e8f4f8;
+    outline: none;
+    border-color: #2980b9;
+}
+
+input:required {
+    border-left: 4px solid #c0392b;
+}
+
+input:read-only {
+    background-color: #dddddd;
+    color: #555555;
+    border-left: 1px solid #777777; 
+}
+
+input:disabled {
+    background-color: #eeeeee;
+    color: #999999;
+    opacity: 0.7;
+    border-left: 1px solid #777777;
+}
+
+input[type="radio"]:checked + .lbl-opcion,
+input[type="checkbox"]:checked + .lbl-opcion {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.opciones {
+    display: inline-block;
+}
+
+.lbl-opcion {
+    width: auto;
+    margin-right: 15px;
+    font-weight: normal;
+    color: #000000;
+}
+
+input:hover:focus, textarea:hover:focus {
+    background-color: #d4efdf; 
+}
+
+textarea {
+    resize: none;
+    vertical-align: top;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ffffff;
+}
+
+.botones button {
+    width: 48%;
+    padding: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #efefef;
+    border: 1px solid #777777;
+}
+
+.botones button:hover {
+    background-color: #e0e0e0;
+}

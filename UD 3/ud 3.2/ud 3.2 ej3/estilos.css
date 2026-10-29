@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333333;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+.articulo {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+
+p::first-letter {
+    font-size: 32px;
+    font-weight: bold;
+    color: #e74c3c;
+    float: left;
+    line-height: 1;
+    margin-right: 6px;
+}
+
+p::first-line {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+::selection {
+    background-color: #f39c12;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none; 
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+ul li::before {
+    content: "✔ ";
+    color: #27ae60;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+a[target="_blank"]::after {
+    content: " ↗";
+    font-size: 14px;
+    color: #2980b9;
+}
+
+h2 {
+    position: relative; 
+    margin-top: 30px;
+    color: #34495e;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #3498db;
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+.tooltip-trigger {
+    position: relative; 
+    border-bottom: 1px dashed #e74c3c;
+    cursor: help;
+    color: #c0392b;
+    font-weight: bold;
+}
+
+[data-ayuda]:hover::after {
+    content: attr(data-ayuda); /* Extrae el texto del atributo HTML */
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 4px;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 10;
+}
