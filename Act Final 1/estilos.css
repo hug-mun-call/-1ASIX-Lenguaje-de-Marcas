@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+header, nav, footer {
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+header {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+header h1 span {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.logo-header {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li a {
+    display: block;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+nav li a:hover {
+    color: red;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+.contenedor-principal {
+    width: 92%;
+    max-width: 1200px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+article.tarjeta {
+    display: inline-block; /* Requisito del PDF */
+    width: 31%;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin: 1%;
+    padding: 20px;
+    text-align: left;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    min-height: 180px;
+}
+
+article.tarjeta:nth-child(1) { background-color: rgba(162, 179, 188, 0.5); }
+article.tarjeta:nth-child(2) { background-color: rgba(241, 151, 79, 0.5); }
+article.tarjeta:nth-child(3) { background-color: rgba(208, 61, 107, 0.5); }
+article.tarjeta:nth-child(4) { background-color: rgba(195, 23, 65, 0.5); }
+article.tarjeta:nth-child(5) { background-color: rgba(109, 104, 166, 0.5); }
+article.tarjeta:nth-child(6) { background-color: rgba(156, 154, 203, 0.5); }
+
+.tarjeta h2 {
+    margin-top: 0;
+    font-size: 17px;
+    color: #222;
+}
+
+.tarjeta p {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.icono-img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover .icono-img, .ico-footer:hover {
+    transform: scale(1.2);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.iconos-footer {
+    margin-bottom: 8px;
+}
+
+.ico-footer {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+    letter-spacing: 0.5px;
+}
