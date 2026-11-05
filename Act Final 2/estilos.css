@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9efe9; 
+    color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+header {
+    background-color: #2f5d46; 
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative; 
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.sello {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 84px;
+    height: 84px;
+    background-color: #f08a24; 
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    display: block;
+    box-sizing: border-box;
+    padding-top: 26px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    background-color: #2f5d46;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block; 
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #f08a24; 
+}
+
+main {
+    padding: 20px 30px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #2f5d46;
+    font-size: 20px;
+    border-bottom: 2px solid #e9efe9;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+.foto-verde { background-color: #8fb996; }
+.foto-azul { background-color: #a7c5d9; }
+.foto-amarilla { background-color: #e5c07b; }
+
+.tarjetas-contenedor {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    display: inline-block;
+    width: 270px;
+    margin: 0 10px;
+    vertical-align: top;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    overflow: hidden; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.foto-tarjeta {
+    height: 140px;
+    width: 100%;
+}
+
+.etiqueta-nivel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f08a24;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.contenido-tarjeta {
+    padding: 15px;
+}
+
+.contenido-tarjeta h3 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #222222;
+}
+
+.contenido-tarjeta p {
+    margin: 0;
+    font-size: 12px;
+    color: #555555;
+    line-height: 1.4;
+}
+
+.tarjeta-elevada {
+    position: relative;
+    top: -12px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.galeria-contenedor {
+    height: 250px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.polaroid {
+    width: 280px;
+    height: 210px;
+    border: 6px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    transition: z-index 0.2s ease, transform 0.2s ease;
+}
+
+.polaroid-1 {
+    top: 10px;
+    left: 80px;
+    z-index: 1;
+}
+
+.polaroid-2 {
+    top: 30px;
+    left: 290px;
+    z-index: 3; 
+}
+
+.polaroid-3 {
+    top: 10px;
+    left: 500px;
+    z-index: 2;
+}
+
+.polaroid:hover {
+    z-index: 10;
+    transform: scale(1.02);
+}
+
+.pie-foto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgba(40, 40, 40, 0.8);
+    color: #ffffff;
+    font-size: 12px;
+    padding: 6px 10px;
+}
+
+.caja-opiniones {
+    height: 170px; 
+    overflow-y: auto; 
+    border: 1px solid #e0e0e0;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+
+.opinion {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.opinion:last-child {
+    border-bottom: none;
+}
+
+.opinion p {
+    margin: 0;
+    font-size: 13px;
+    color: #333333;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e9efe9;
+    font-size: 12px;
+    color: #666666;
+    border-top: 1px solid #d0d8d0;
+}
+
+.btn-subir {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    background-color: #f08a24;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    transition: background-color 0.2s ease;
+}
+
+.btn-subir:hover {
+    background-color: #d87616;
+}
