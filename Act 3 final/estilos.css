@@ -1,0 +1,223 @@
+/* Reset y base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* GRID principal de 2 columnas: 200px para el menú y 1fr para el contenido */
+body {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #09080f;
+  color: #f4f4f8;
+  line-height: 1.5;
+  position: static;
+}
+
+/* 1. Menú lateral fijo con FLEXBOX */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  background-color: #06050a;
+  border-right: 1px solid #1d1b29;
+  padding: 28px 20px;
+  z-index: 20;
+}
+
+nav .logo {
+  color: #ff4f81;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  font-size: 0.9rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+nav a {
+  color: #e6e6ee;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #38e1d0;
+}
+
+/* Contenido principal ubicado en la 2.ª columna del Grid */
+main {
+  grid-column: 2;
+  position: relative;
+  min-width: 0;
+}
+
+/* 2. Portada */
+header#inicio {
+  position: relative;
+  height: 300px;
+  background: linear-gradient(135deg, #241042 0%, #160c29 100%);
+  border-bottom: 1px solid #26183d;
+}
+
+.portada {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.portada h1 {
+  color: #38e1d0;
+  font-size: 2.3rem;
+  line-height: 1.15;
+}
+
+.portada p {
+  color: #d6d4e2;
+  font-size: 0.95rem;
+}
+
+/* Secciones */
+section {
+  padding-bottom: 36px;
+}
+
+/* 3. Títulos de sección pegajosos (sticky) */
+section h2 {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #0c0a14;
+  color: #38e1d0;
+  font-size: 1.45rem;
+  padding: 18px 30px;
+  border-bottom: 2px solid #38e1d0;
+}
+
+/* 4. Línea de tiempo del programa con GRID */
+ul.horario {
+  position: relative;
+  list-style: none;
+  display: grid;
+  gap: 18px;
+  margin: 24px 30px 0 38px;
+  padding-left: 28px;
+}
+
+/* Línea vertical izquierda */
+ul.horario::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 2px;
+  background-color: #ff4f81;
+}
+
+/* Cada fila de evento en 2 columnas: hora + actividad */
+ul.horario li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.98rem;
+}
+
+/* Punto redondo centrado sobre la línea vertical */
+ul.horario li::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #38e1d0;
+}
+
+ul.horario li strong {
+  color: #ff4f81;
+}
+
+/* 5. Artistas en forma de píldora con FLEXBOX */
+.cartel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin: 24px 30px 0 38px;
+  padding-left: 28px;
+  border-left: 2px solid #ff4f81;
+}
+
+.cartel span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  border: 2px solid #ff4f81;
+  border-radius: 999px;
+  color: #f4f4f8;
+  font-size: 0.95rem;
+}
+
+.cartel span:first-child {
+  background-color: #ff4f81;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* 6. Preguntas con altura fija, scroll y FLEXBOX */
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 170px;
+  overflow-y: auto;
+  margin: 24px 30px 0 38px;
+  padding: 18px 22px;
+  background-color: #141221;
+  border: 2px solid #38e1d0;
+}
+
+.faq p {
+  font-size: 0.94rem;
+  color: #e4e3ee;
+}
+
+.faq p strong {
+  color: #ffffff;
+}
+
+/* Pie de página */
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #110f1c;
+  color: #d0cedc;
+  padding: 22px 30px 22px 68px;
+  border-top: 1px solid #221f33;
+  font-size: 0.9rem;
+}
