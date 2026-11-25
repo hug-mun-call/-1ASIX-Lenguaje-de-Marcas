@@ -1,0 +1,381 @@
+/* =========================================
+   ESTILOS BASE - MOBILE FIRST (< 768px)
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9efe9;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor fluido hasta 960px centrado */
+.contenedor {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Cabecera y título fluido */
+header {
+    background-color: #2f5d46;
+    color: #ffffff;
+    padding: 25px 88px 25px 20px; /* Espacio derecho extra en móvil para no tapar el título con el sello */
+    text-align: left;
+    position: relative;
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    line-height: 1.15;
+}
+
+header p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Sello circular (64px en móvil a 12px de la esquina) */
+.sello {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 64px;
+    height: 64px;
+    background-color: #f08a24;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Menú en móvil: enlaces apilados en vertical, sin sticky */
+nav {
+    background-color: #2f5d46;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+nav a {
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-align: center;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+nav a:hover {
+    color: #f08a24;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #2f5d46;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #e9efe9;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+.foto-verde { background-color: #8fb996; }
+.foto-azul { background-color: #a7c5d9; }
+.foto-amarilla { background-color: #e5c07b; }
+
+/* Tarjetas de rutas en Grid: 1 columna en móvil */
+.tarjetas-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    overflow: hidden; /* Recorta la etiqueta si sobresale */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.foto-tarjeta {
+    height: 140px;
+    width: 100%;
+}
+
+.etiqueta-nivel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f08a24;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.contenido-tarjeta {
+    padding: 15px;
+}
+
+.contenido-tarjeta h3 {
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+    color: #222222;
+}
+
+.contenido-tarjeta p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #555555;
+    line-height: 1.4;
+}
+
+/* Galería Polaroid en Grid: 1 columna, proporción 4:3, sin solaparse */
+.galeria-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.polaroid {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border: 6px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pie-foto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgba(40, 40, 40, 0.8);
+    color: #ffffff;
+    font-size: 0.8rem;
+    padding: 6px 10px;
+}
+
+/* Opiniones en móvil: caja de 170px con scroll, 1 columna */
+.caja-opiniones {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 170px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+
+.opinion {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.opinion:last-child {
+    border-bottom: none;
+}
+
+.opinion p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #333333;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e9efe9;
+    font-size: 0.8rem;
+    color: #666666;
+    border-top: 1px solid #d0d8d0;
+}
+
+/* Botón Subir en móvil: a 12px, zona táctil >= 44x44px */
+.btn-subir {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f08a24;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 22px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    transition: background-color 0.2s ease;
+}
+
+.btn-subir:hover {
+    background-color: #d87616;
+}
+
+
+/* =========================================
+   TABLET (>= 768px)
+   ========================================= */
+@media (min-width: 768px) {
+
+    header {
+        padding: 30px 115px;
+        text-align: center;
+    }
+
+    /* Sello de 84px a 16px de la esquina */
+    .sello {
+        top: 16px;
+        right: 16px;
+        width: 84px;
+        height: 84px;
+        font-size: 12px;
+    }
+
+    /* Menú en fila y sticky */
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        width: auto;
+        border-bottom: none;
+    }
+
+    main {
+        padding: 25px 30px;
+    }
+
+    /* Tarjetas en 2 columnas */
+    .tarjetas-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Galería en 2 columnas */
+    .galeria-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Opiniones: sin scroll, todas visibles en 2 columnas */
+    .caja-opiniones {
+        height: auto;
+        overflow-y: visible;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .opinion {
+        border: 1px solid #eeeeee;
+        background-color: #ffffff;
+        border-radius: 4px;
+    }
+
+    /* Botón subir a 20px */
+    .btn-subir {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+
+/* =========================================
+   ESCRITORIO (>= 992px)
+   ========================================= */
+@media (min-width: 992px) {
+
+    /* Menú centrado */
+    nav ul {
+        justify-content: center;
+    }
+
+    /* Tarjetas en 3 columnas y tarjeta central elevada */
+    .tarjetas-contenedor {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tarjeta-elevada {
+        transform: translateY(-12px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Galería en 3 columnas */
+    .galeria-contenedor {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Opiniones en 3 columnas */
+    .caja-opiniones {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Hover de polaroid solo en dispositivos con ratón */
+@media (hover: hover) {
+    .polaroid:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+}
